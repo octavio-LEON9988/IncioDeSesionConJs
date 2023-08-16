@@ -33,7 +33,8 @@ const bienvenidaAlUsuario = nombre => {
 buttonLogin.addEventListener("click", ()=>{
     const usuarioFind = baseDeDatos.find(login => usuarioLogeado.usuario == login.usuario && usuarioLogeado.contraseña == login.contraseña);
     if(usuarioFind != undefined){
-        bienvenidaAlUsuario(usuarioFind.usuario)
+        bienvenidaAlUsuario(usuarioFind.usuario);
+        localStorage.setItem("usuario", JSON.stringify(usuarioFind))
     }
     if(usuarioFind == undefined){
         sesionIniciada.innerHTML = `<h1 class="tituloNoEncontrado">Usuario no encontrado :(</h1>`
