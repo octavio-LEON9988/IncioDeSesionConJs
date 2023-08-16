@@ -30,7 +30,7 @@ const bienvenidaAlUsuario = nombre => {
     sesionIniciada.innerHTML = `<h1 class="tituloBienvenida">Bienvenid@ ${nombre}</h1>`
 }
 
-if(usuarioEncontradoEnElLocalStorage != undefined){
+if(usuarioEncontradoEnElLocalStorage != null){
     bienvenidaAlUsuario(usuarioEncontradoEnElLocalStorage.usuario)
 }
 //==============================DOM/InicioSesion=================================
