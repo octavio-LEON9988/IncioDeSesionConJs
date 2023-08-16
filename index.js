@@ -20,6 +20,8 @@ const usuarioLogeado = {
     contraseña: ""
 }
 
+const usuarioEncontradoEnElLocalStorage = JSON.parse(localStorage.getItem("usuario"));
+
 const buttonLogin = document.querySelector("#botonLog");
 const inputs = document.querySelectorAll(".inputUser");
 const sesionIniciada = document.querySelector("#inicioSesion");
@@ -28,6 +30,9 @@ const bienvenidaAlUsuario = nombre => {
     sesionIniciada.innerHTML = `<h1 class="tituloBienvenida">Bienvenid@ ${nombre}</h1>`
 }
 
+if(usuarioEncontradoEnElLocalStorage != undefined){
+    bienvenidaAlUsuario(usuarioEncontradoEnElLocalStorage.usuario)
+}
 //==============================DOM/InicioSesion=================================
 
 buttonLogin.addEventListener("click", ()=>{
