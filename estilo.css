@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(46, 46, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+section#inicioSesion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#divInputs{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 1.5rem;
+}
+div#h2Usuario{
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input{
+    width: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+button{
+    width: 50%;
+    margin-top: 5rem;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+h1.tituloBienvenida{
+    font-size: 4rem;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1.tituloNoEncontrado{
+    font-size: 4rem;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
